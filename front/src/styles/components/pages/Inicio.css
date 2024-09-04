@@ -1,0 +1,49 @@
+section {
+    width: 100%;
+
+}
+
+.IndexArticleTitulo{
+    font-size: xx-large;
+}
+article {
+    font-size: x-large;
+}
+
+.IndexSection {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+
+.IndexArticle {
+    background-color: #333;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap :2%;
+    margin:1em;
+    transition: 0.3s ease;
+    color: white;
+    }
+
+.IndexArticle:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) -10px 10px, rgba(0, 0, 0, 0.3) -15px 15px, rgba(0, 0, 0, 0.2) -20px 20px, rgba(0, 0, 0, 0.1) -25px 25px, rgba(0,0, 0, 0.05) -30px 30px;
+}
+
+
+.IndexArticleDiv2{
+    box-sizing: border-box;
+    line-height: 0%;
+}
+.IndexArticleImg {
+    width: 100%;
+}
+
+
+

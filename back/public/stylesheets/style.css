@@ -1,0 +1,59 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  background-color: #343a40; /* Fondo oscuro */
+  color: #f8f9fa; /* Texto claro */
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #454d55;
+}
+
+.table thead th {
+  background-color: #495057; /* Fondo más oscuro para encabezados */
+  color: #f8f9fa; /* Texto claro para encabezados */
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #3e444a; /* Alternar colores en filas pares */
+}
+
+.table tbody tr:hover {
+  background-color: #495057; /* Efecto hover en las filas */
+}
+
+.btn-success {
+  color: #fff !important;
+  background-color: #28a745;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

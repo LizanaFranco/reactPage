@@ -1,0 +1,32 @@
+<header><h1>Administracion</h1></header>
+<table class="table table-dark table-sm">
+    <tr>
+        <thead>
+            <th scope="col">id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Stock</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">imagen</th>
+            <th scope="col" colspan="2"><a href="/agregar"  class="btn btn-success"><i class="fa fa-plus" aria-hidden="true"></i>Nuevo</a></th>
+        <!--    <th><form action=""><input type="search" placeholder="Buscar"><button type="submit">Buscar</button></form></th>-->
+        </thead>
+    </tr>
+    {{#each games}}
+    <tr>
+        <td>{{id}}</td>
+        <td>{{Nombre}}</td>
+        <td>{{Tipo}}</td>
+        <td>{{Precio}} </td>
+        <td>{{Stock}}</td>
+        <td>{{Descripcion}}</td>
+        <td>{{{imagen}}}</td>
+        <td><a href="./editar/{{id}}" style="color:aliceblue">Editar</a></td>
+        <td><a href="./eliminar/{{id}}" style="color:aliceblue">Eliminar</a></td>
+    </tr>
+
+
+
+    {{/each}}
+</table>

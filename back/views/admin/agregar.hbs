@@ -1,0 +1,115 @@
+<h1>formulario</h1>
+<form action="/agregar" method="post" enctype="multipart/form-data" class="formAgregar">
+    <input type="text" class="inputFromAgregar" name="Nombre" placeholder="Nombre">
+    <select name="Tipo" id="Tipo" class="selectFormAgregar">
+        <option value="Solo">Solo</option>
+        <option value="Multijugador">Multijugador</option>
+        <option value="Accion/Aventura">Accion/Aventura</option>
+        <option value="Disparos">Disparos</option>
+        <option value="Deportes">Deportes</option>
+        <option value="Estrategia">Estrategia</option>
+        <option value="Simulacion">Simulacion</option>
+    </select>
+    <input type="text" class="inputFromAgregar" name="Precio" placeholder="precio">
+    <input type="text" class="inputFromAgregar" name="Stock" placeholder="Stock">
+    <textarea name="Descripcion" class="textareaFormAgregar" placeholder="Descripcion"></textarea>
+    <label for="imagen">imagen:</label>
+    <input type="file" class="fileAgregar" name="imagen" id="imagen">
+    <button type="submit" class="buttonFormAgregar">Crear</button>
+</form>
+{{#if error}}
+<p>{{message}} </p>
+{{/if}}
+
+<a href="/" class="aFormAgregar">Volver</a>
+
+<style>
+    /* Estilo para el título */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el formulario */
+.formAgregar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Estilo para los inputs de texto */
+.inputFromAgregar,
+.selectFormAgregar,
+.textareaFormAgregar,
+.fileAgregar {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.inputFromAgregar:focus,
+.selectFormAgregar:focus,
+.textareaFormAgregar:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilo para el textarea */
+.textareaFormAgregar {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Estilo para el botón de enviar */
+.buttonFormAgregar {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.buttonFormAgregar:hover {
+    background-color: #218838;
+}
+
+/* Estilo para el enlace "Volver" */
+.aFormAgregar {
+    display: inline-block;
+    margin-top: 10px;
+    color: #6c757d;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #343a40;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.aFormAgregar:hover {
+    background-color: #495057;
+    transform: scale(1.05);
+    color: white;
+}
+
+/* Estilo para el mensaje de error */
+p {
+    color: #ff4d4f;
+    text-align: center;
+}
+
+</style>
